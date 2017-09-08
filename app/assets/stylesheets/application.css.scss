@@ -16,7 +16,74 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
+
+// Typography Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
+}
+
+//Background Gradient
+.navbar, .home-callout {
+  //Gradient provided by @_ighosh at uiGradients.com
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+//Nav Styles
+.navbar {
+  border:none;
+}
+
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+.navbar-default .navbar-brand {
+  color:white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover {
+    color:white;
+    opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  opacity: 0.75;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #24243e;
+  }
+}
+
+//Home Page Styels
+.home-callout {
+  color: white;
+  margin-top:-20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.navbar {
+  border: none;
 }
